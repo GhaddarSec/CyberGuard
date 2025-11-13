@@ -7,7 +7,7 @@ function Home() {
     <div className="flex flex-col min-h-screen">
       <Navbar />
       <main className="flex-grow bg-blue-600">
-        <section className="text-center py-20 bg-blue-600 text-white bg-contain" style={{ backgroundImage: "url('public/map.jpg')" }}>
+        <section className="text-center py-20 bg-blue-600 text-white bg-contain" style={{ backgroundImage: "url('/map.jpg')" }}>
           <h1 className="text-5xl font-bold mb-4">Welcome to CyberGuard</h1>
           <p className="text-xl mb-6">
             Learn about cyber threats and how to stay safe online.
