@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+const Navbar=() =>{
   return (
-    <nav className="fixed top-0 left-0 w-full  text-white px-6 py-4 flex justify-between items-center shadow-md z-50">
+    <nav className=" shadow-none border-none fixed top-0 left-0 w-full  text-white px-6 py-4 flex justify-between items-center shadow-md z-50">
       <div className="text-2xl font-bold text-blue-600">CyberGuard</div>
       <ul className="flex space-x-6">
         <li>

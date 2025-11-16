@@ -1,8 +1,11 @@
 import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function About() {
   return (
     <main className="flex-grow">
+      <Navbar/> 
 
       <section className="text-center py-12 bg-black-600 text-white">
   <h1 className="text-4xl md:text-5xl font-bold mb-3">Welcome to CyberGuard</h1>
@@ -11,11 +14,11 @@ function About() {
   </p>
 </section>
 
-      <section className="py-16 px-6 md:px-20 bg-cover bg-center text-white" style={{ backgroundImage: "url('/map.jpg')" }}>
-  <h2 className="text-4xl md:text-5xl font-extrabold mb-8">
+      <section className="py-16 px-6 md:px-20 bg-cover bg-center text-white" style={{ backgroundImage: "url('public/cybersecurity-concept-illustration.jpg')" }}>
+  <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-black">
     Our Mission
   </h2>
-  <p className="text-xl md:text-2xl leading-relaxed text-gray-50">
+  <p className="text-xl md:text-2xl leading-relaxed  text-black bold">
     To provide practical, easy-to-understand guidance on protecting your
     personal information, understanding cyber threats, and improving
     digital hygiene for individuals and organizations.
@@ -50,6 +53,7 @@ function About() {
     attacks and ensuring personal and organizational safety online.
   </p>
 </section>
+<Footer/>
     </main>
   );
 }
