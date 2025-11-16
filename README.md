@@ -4,7 +4,7 @@ CyberGuard is a web application designed to promote cyber awareness. It provides
 Setup Instructions:
 Clone the repository, install dependencies, and run the development server:
 
-1-git clone https://github.com/your-username/CyberGuard.git
+1-git clone https://github.com/GhaddarSec/CyberGuard.git
 2-cd CyberGuard
 3-npm install
 4-npm run dev
