@@ -1,38 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
-const Quiz=() =>{
+const Quiz = () => {
+  const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [showScore, setShowScore] = useState(false);
 
-  const questions = [
-    {
-      question: "What is phishing?",
-      option1: "A technique to steal sensitive info via fake emails",
-      option2: "A way to secure your passwords",
-      option3: "An antivirus software",
-      option4: "A programming language",
-      answer: 1
-    },
-    {
-      question: "Which of these is a strong password?",
-      option1: "123456",
-      option2: "Password",
-      option3: "My$3cureP@ss!",
-      option4: "abcdef",
-      answer: 3
-    },
-    {
-      question: "Two-factor authentication helps you:",
-      option1: "Recover deleted files",
-      option2: "Add an extra layer of security",
-      option3: "Make your internet faster",
-      option4: "Hide your IP address",
-      answer: 2
-    }
-  ];
+  useEffect(() => {
+    axios.get("http://localhost:5002/api/quizzes")
+      .then((res) => {
+        setQuestions(res.data);
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  }, []);
 
   function handleAnswer(choice) {
     if (choice === questions[currentQuestion].answer) {
@@ -50,6 +35,10 @@ const Quiz=() =>{
     setCurrentQuestion(0);
     setScore(0);
     setShowScore(false);
+  }
+
+  if (questions.length === 0) {
+    return null; 
   }
 
   return (
@@ -110,6 +99,6 @@ const Quiz=() =>{
       <Footer />
     </div>
   );
-}
+};
 
 export default Quiz;
