@@ -7,7 +7,7 @@ export default function SecurityTips() {
   const [tips, setTips] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5002/api/security-tips")
+    axios.get("http://localhost:5002/api/security-tips", { withCredentials: true })
       .then((res) => {
         setTips(res.data);
       })

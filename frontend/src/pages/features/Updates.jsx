@@ -7,7 +7,7 @@ export default function Updates() {
   const [updates, setUpdates] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5002/api/updates")
+    axios.get("http://localhost:5002/api/updates", { withCredentials: true })
       .then((res) => {
         setUpdates(res.data);
       })

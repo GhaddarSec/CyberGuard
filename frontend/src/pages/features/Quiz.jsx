@@ -10,7 +10,7 @@ const Quiz = () => {
   const [showScore, setShowScore] = useState(false);
 
   useEffect(() => {
-    axios.get("http://localhost:5002/api/quizzes")
+    axios.get("http://localhost:5002/api/quizzes", { withCredentials: true })
       .then((res) => {
         setQuestions(res.data);
       })

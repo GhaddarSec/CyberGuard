@@ -15,7 +15,7 @@ function Features() {
       title: "Quizzes",
       description: "Test your knowledge about phishing, malware, and safe browsing.",
       buttonText: "Start Quiz",
-      link: "/features/quiz",
+      link: "/features/quizzes",
     },
     {
       title: "Updates & Alerts",
