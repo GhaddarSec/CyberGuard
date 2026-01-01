@@ -13,7 +13,7 @@ function Home() {
             Learn about cyber threats and how to stay safe online.
           </p>
           <a
-            href="#features"
+            href="/features"
             className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition"
           >
             Explore Features

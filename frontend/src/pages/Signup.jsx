@@ -60,7 +60,7 @@ const Signup = () => {
 
           <button 
             type="submit" 
-            className="w-full bg-sky-500 hover:bg-sky-400 text-slate-950 font-bold py-3 rounded-lg transition-transform active:scale-95 shadow-lg shadow-sky-500/20"
+            className="w-full bg-sky-500 hover:bg-sky-400 text-white/90 font-bold py-3 rounded-lg transition-transform active:scale-95 shadow-lg shadow-sky-500/20"
           >
             Create Account
           </button>

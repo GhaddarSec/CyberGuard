@@ -66,7 +66,7 @@ const Login = () => {
         </form>
 
         <p className="text-center text-slate-500 text-sm mt-8">
-          Don't have access? <a href="/signup" className="text-sky-400 hover:underline">Create Account</a>
+          Don't have an account? <a href="/signup" className="text-sky-400 hover:underline">Create Account</a>
         </p>
       </div>
     </div>
