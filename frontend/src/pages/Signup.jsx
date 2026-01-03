@@ -10,7 +10,7 @@ const Signup = () => {
   const handleRegister = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5002/api/auth/signup", { username, email, password });
+      await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/auth/signup`, { username, email, password });
       window.location.href = "/login";
     } catch (err) {
       setError("Error. try again later.");

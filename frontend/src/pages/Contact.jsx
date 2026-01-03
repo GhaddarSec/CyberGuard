@@ -13,7 +13,7 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios.post("http://localhost:5002/api/contact", formData)
+    axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, formData)
       .then((res) => {
         alert(`Message sent! Thank you, ${formData.name}.`);
         setFormData({ name: "", email: "", message: "" });
