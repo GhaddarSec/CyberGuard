@@ -14,7 +14,7 @@ function About() {
   </p>
 </section>
 
-      <section className="py-16 px-6 md:px-20 bg-cover bg-center text-white" style={{ backgroundImage: "url('public/cybersecurity-concept-illustration.jpg')" }}>
+      <section className="py-16 px-6 md:px-20 bg-cover bg-center text-white" style={{ backgroundImage: "url('/cybersecurity-concept-illustration.jpg')" }}>
   <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-black">
     Our Mission
   </h2>

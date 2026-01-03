@@ -25,7 +25,7 @@ function Contact() {
   };
 
   return (
-    <div className="w-full min-h-screen bg-gray-200 bg-contain flex flex-col" style={{ backgroundImage: "url('public/cybersecurity-concept-illustration.jpg')" }}>
+    <div className="w-full min-h-screen bg-gray-200 bg-contain flex flex-col" style={{ backgroundImage: "url('/cybersecurity-concept-illustration.jpg')" }}>
       <Navbar />
       <div className="flex-grow flex justify-center items-center w-full px-4 py-12">
         <div className="bg-gray-800 p-8 rounded-lg shadow-xl w-full max-w-md">
