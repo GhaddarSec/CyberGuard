@@ -9,7 +9,7 @@ import contentRoutes from './routes/content.js';
 
 const app =express();
 app.use(cors({
-  origin: "http://localhost:5173", 
+  origin: "https://cyber-guardd.netlify.app", 
   credentials: true                
 }));
 app.use(cookieParser());
