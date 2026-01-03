@@ -82,7 +82,7 @@ router.post("/login", (req, res) => {
                     }
                 );
 
-                return res.cookie("jwt", token, { httpOnly: true })
+                return res.cookie("jwt", token, { httpOnly: true, secure: true, sameSite: "none", maxAge: 3600000 })
                     .status(200)
                     .json("Login Successful");
             }
