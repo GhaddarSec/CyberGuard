@@ -7,7 +7,7 @@ export default function SecurityTips() {
   const [tips, setTips] = useState([]);
 
   useEffect(() => {
-    axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/security-tips`, { withCredentials: true })
+    axios.get(`${import.meta.env.VITE_BACKEND_URL}/api/security-tips`, { withCredentials: true })
       .then((res) => {
         setTips(res.data);
       })
