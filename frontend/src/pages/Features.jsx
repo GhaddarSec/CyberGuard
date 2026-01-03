@@ -34,7 +34,7 @@ function Features() {
           className="py-16 text-center bg-blue-600 text-white bg-cover"
           style={{
             backgroundImage:
-              "url('public/person-suffering-from-technology-addiction-cybersickness.jpg')",
+              "url('/person-suffering-from-technology-addiction-cybersickness.jpg')",
           }}
         >
           <h1 className="text-4xl font-bold mb-4 text-white">
